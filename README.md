@@ -9,7 +9,9 @@ This set of demos gets you up and running with streamtools in no time flat.
 The demos require a local instance of streamtools running on the default port (7070).
 
 ```code
-git clone https://github.com/jacqui/streamtools-demos.git
+mkdir -p $GOPATH/src/github.com/nytlabs
+cd $GOPATH/src/github.com/nytlabs
+git clone https://github.com/nytlabs/streamtools-demos.git
 cd streamtools-demos
 go get .
 go build
