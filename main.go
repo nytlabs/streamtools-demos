@@ -59,5 +59,5 @@ func main() {
 	r.HandleFunc("/css/{filename}", CssHandler)
 	r.HandleFunc("/js/{filename}", JsHandler)
 	http.Handle("/", r)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":80", nil)
 }
