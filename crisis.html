@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Streamtools Tutorials: Earthquake Tracker</title>
+        <script src="/js/jquery-2.1.0.min.js"></script>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+        <script src="/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/css/tutorials.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted"><a href="/">Streamtools Tutorials</a></h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Crisis Tracker</h1>
+        <p id="leadPara" class="lead">
+        TK
+        </p>
+        <p id="buttonPara"><a id="getStarted" class="btn btn-lg btn-success" href="#" role="button">Get Started!</a></p>
+      </div>
+
+    </div> <!-- /container -->
+
+  <script>
+    $(document).ready(function() {
+      $.ajax({
+        url: 'http://devapi.crisis.net/item',
+        dataType: "json",
+        beforeSend: function(xhr) {
+          xhr.setRequestHeader('Authorization', 'Bearer ' + '535a9fa06a2165d01fabc678');
+        },
+        success: function (data) {
+          console.log(data);
+        }
+      });
+    });
+  </script>
+
+  </body>
+</html>
