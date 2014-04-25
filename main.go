@@ -1,7 +1,6 @@
 package main
 
 import (
-	//"fmt"
 	"github.com/gorilla/mux"
 	"io/ioutil"
 	"log"
@@ -53,6 +52,7 @@ func JsHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	log.Println("streamtools demos are running on http://localhost:8080/")
 	r := mux.NewRouter()
 	r.HandleFunc("/", RootHandler)
 	r.HandleFunc("/{tutorial}.html", TutorialHandler)
