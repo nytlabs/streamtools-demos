@@ -6,7 +6,9 @@ This set of demos gets you up and running with streamtools in no time flat.
 
 ## Setup
 
-The demos require a local instance of streamtools running on the default port (7070).
+**IMPORTANT!** The demos require a local instance of streamtools already installed and running on http://localhost:7070
+
+### To start the demos
 
 ```code
 mkdir -p $GOPATH/src/github.com/nytlabs
@@ -18,4 +20,4 @@ go build
 ./streamtools-demos
 ```
 
-You'll find the list of demos at http://localhost:8080/
+You'll find the list of demos at [http://localhost:8080/](http://localhost:8080/)
